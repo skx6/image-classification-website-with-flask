@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Classification</title>
+</head>
+<body>
+    <h1>Image Classification Demo</h1>
+    <form action="" enctype='multipart/form-data' method='POST'>
+        <input type="file" name="picture" style="margin-top:20px;"/>
+        <br>
+        <i>Upload your picture, please click here: </i>
+        <input type="submit" value="upload" name="submit" class="button-new" style="margin-top:15px;"/>
+        <br>
+        <i>Start classification, please click here: </i>
+        <input type="submit" value="classify" name="submit" class="button-new" style="margin-top:15px;"/>
+    </form>
+    <h3>{{message}}</h3>
+    <img src="{{ url_for('static', filename= './images/test.jpg') }}" width="400" height="400"/>
+</body>
+</html>
