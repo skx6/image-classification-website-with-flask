@@ -5,6 +5,6 @@ This is a cnn based classification website with **pytorch** and **flask**, click
 
 run the following code to set up the image classification website.
 
+```
   $ python image_classification.py
-
-
+```
